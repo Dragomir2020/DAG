@@ -266,7 +266,7 @@ int main(int argc, char* argv[]){
     
     // Print relations
     taskGraph->Print();
-    std::deque<int>* x = taskGraph->TopologicalSort();
+    std::deque<int>* d = taskGraph->TopologicalSort();
     std::cout << "Topological Sort!" << std::endl;
     while(d->size() > 0){
         if(d->at(0) == -1){
